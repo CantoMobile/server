@@ -1,0 +1,4 @@
+#IGNORE PYTHON ENVIRONMENT 
+venv/
+**/__pycache__/
+**/.vscode/
