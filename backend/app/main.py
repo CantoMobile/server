@@ -13,6 +13,9 @@ db = dbase.connect()
 
 # App exception handling
 
+@app.route("/")
+def home():
+    return "Hello World!"
 
 @app.errorhandler(Exception)
 def handle_error(error):
