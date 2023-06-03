@@ -1,7 +1,7 @@
 from bson import ObjectId
 from flask import abort, request
-from models.user_model import User
-from repositories.abstract_repository import AbstractRepository
+from ..models.user_model import User
+from .abstract_repository import AbstractRepository
 from main import db
 
 
