@@ -2,8 +2,9 @@ from bson import ObjectId
 from flask import abort, request
 from ..models.user_model import User
 from .abstract_repository import AbstractRepository
-from main import db
+from ..config import database as dbase
 
+db = dbase.connect()
 
 class UserRepository(AbstractRepository[User]):
     def __init__(self):
