@@ -1,7 +1,9 @@
 from bson import DBRef
 from bson.objectid import ObjectId
 from typing import Generic, TypeVar, get_args, List
-from main import db
+from ..config import database as dbase
+
+db = dbase.connect()
 
 T = TypeVar("T")
 
